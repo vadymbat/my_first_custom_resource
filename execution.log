@@ -1,0 +1,35 @@
+START RequestId: 007d8424-fe79-4115-a2d0-6f4cce2da752 Version: $LATEST
+[DEBUG]	2020-02-20T22:36:21.976Z	007d8424-fe79-4115-a2d0-6f4cce2da752	{'RequestType': 'Create', 'ServiceToken': 'arn:aws:lambda:eu-west-2:************:function:custom-CustomResourceFunction-11FSP4BAEWH2A', 'ResponseURL': 'https://cloudformation-custom-resource-response-euwest2.s3.eu-west-2.amazonaws.com/arn%3Aaws%3Acloudformation%3Aeu-west-2%3A************%3Astack/custom/c96d2c40-5430-11ea-8907-02949b77ae4a%7CSumResource%7C6ddf892b-d602-46e3-951c-e601f00a031e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200220T223620Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAZYWU4JB3V32G2EGR%2F20200220%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=02efdb08f35858d874d8830e1c3ec711f5a0cda1270c6012cf11856589c73581', 'StackId': 'arn:aws:cloudformation:eu-west-2:************:stack/custom/c96d2c40-5430-11ea-8907-02949b77ae4a', 'RequestId': '6ddf892b-d602-46e3-951c-e601f00a031e', 'LogicalResourceId': 'SumResource', 'ResourceType': 'Custom::Summer', 'ResourceProperties': {'ServiceToken': 'arn:aws:lambda:eu-west-2:************:function:custom-CustomResourceFunction-11FSP4BAEWH2A', 'No2': '2', 'No1': '1'}}
+{
+    "RequestType": "Create",
+    "ServiceToken": "arn:aws:lambda:eu-west-2:************:function:custom-CustomResourceFunction-11FSP4BAEWH2A",
+    "ResponseURL": "https://cloudformation-custom-resource-response-euwest2.s3.eu-west-2.amazonaws.com/arn%3Aaws%3Acloudformation%3Aeu-west-2%3A************%3Astack/custom/c96d2c40-5430-11ea-8907-02949b77ae4a%7CSumResource%7C6ddf892b-d602-46e3-951c-e601f00a031e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200220T223620Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAZYWU4JB3V32G2EGR%2F20200220%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=02efdb08f35858d874d8830e1c3ec711f5a0cda1270c6012cf11856589c73581",
+    "StackId": "arn:aws:cloudformation:eu-west-2:************:stack/custom/c96d2c40-5430-11ea-8907-02949b77ae4a",
+    "RequestId": "6ddf892b-d602-46e3-951c-e601f00a031e",
+    "LogicalResourceId": "SumResource",
+    "ResourceType": "Custom::Summer",
+    "ResourceProperties": {
+        "ServiceToken": "arn:aws:lambda:eu-west-2:************:function:custom-CustomResourceFunction-11FSP4BAEWH2A",
+        "No2": "2",
+        "No1": "1"
+    }
+}
+[DEBUG]	2020-02-20T22:36:21.994Z	007d8424-fe79-4115-a2d0-6f4cce2da752	enabling send_response
+[DEBUG]	2020-02-20T22:36:21.994Z	007d8424-fe79-4115-a2d0-6f4cce2da752	_send_response: True
+[INFO]	2020-02-20T22:36:21.994Z	007d8424-fe79-4115-a2d0-6f4cce2da752	No physical resource id returned, generating one...
+[DEBUG]	2020-02-20T22:36:21.994Z	007d8424-fe79-4115-a2d0-6f4cce2da752	CFN response URL: https://cloudformation-custom-resource-response-euwest2.s3.eu-west-2.amazonaws.com/arn%3Aaws%3Acloudformation%3Aeu-west-2%3A************%3Astack/custom/c96d2c40-5430-11ea-8907-02949b77ae4a%7CSumResource%7C6ddf892b-d602-46e3-951c-e601f00a031e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200220T223620Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIAZYWU4JB3V32G2EGR%2F20200220%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Signature=02efdb08f35858d874d8830e1c3ec711f5a0cda1270c6012cf11856589c73581
+[DEBUG]	2020-02-20T22:36:21.994Z	007d8424-fe79-4115-a2d0-6f4cce2da752	
+{
+    "Status": "SUCCESS",
+    "PhysicalResourceId": "custom_SumResource_6HBPNQ11",
+    "StackId": "arn:aws:cloudformation:eu-west-2:************:stack/custom/c96d2c40-5430-11ea-8907-02949b77ae4a",
+    "RequestId": "6ddf892b-d602-46e3-951c-e601f00a031e",
+    "LogicalResourceId": "SumResource",
+    "Reason": "",
+    "Data": {
+        "Sum": 3
+    }
+}
+[INFO]	2020-02-20T22:36:22.208Z	007d8424-fe79-4115-a2d0-6f4cce2da752	CloudFormation returned status code: OK
+END RequestId: 007d8424-fe79-4115-a2d0-6f4cce2da752
+REPORT RequestId: 007d8424-fe79-4115-a2d0-6f4cce2da752	Duration: 259.97 ms	Billed Duration: 300 ms	Memory Size: 128 MB	Max Memory Used: 76 MB	Init Duration: 636.00 ms

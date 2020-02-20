@@ -1,0 +1,21 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: My first custom resource
+Resources:
+  CustomResourceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: package
+      Handler: custom_resource.handler
+      Runtime: python3.7
+      Timeout: 5
+  SumResource:
+    Type: "Custom::Summer"
+    Properties:
+      ServiceToken: !GetAtt CustomResourceFunction.Arn
+      No1: 1
+      No2: 2
+Outputs:
+  Sum:
+    Value: !GetAtt SumResource.Sum
