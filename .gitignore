@@ -1,2 +1,10 @@
+# python related
+env/*
+.env/*
 venv/*
+package/*
+
+# IDE related
 .*/*
+.vscode/*
+.idea/*
